@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.sec{
+    margin: 0px auto;
+}
+.inputBox{
+    background-color: #156ee3;
+    padding:10px 15px;
+}
+input{
+    width:370px;
+    border-radius: 4px;
+    padding:10px;
+}
+button{
+    padding:10px 15px;
+    border: 0;
+    border-radius: 3px;
+    background-color: crimson;
+    color: #fff;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    /* background-color: red; */
+}
+.containers{
+    display: grid;
+    padding:10px 15px;
+    grid-template-columns: repeat(4,auto);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.containers .items{
+    height:max-content;
+    width:340px;
+    border-radius: 15px;
+    /* border:1px solid black; */
+    box-shadow: 0px 5px 7px rgba(0,0,0,0.5);
+    padding:8px;
+}
+.items .imgEl{
+    width:300px;
+    margin:0px auto;
+    height:330px;
+}
+.imgEl img{
+    border:2px solid crimson;
+    height:100%;
+    border-radius: 15px;
+    width: 100%;
+}
+.title{
+    background-color: antiquewhite;
+    margin-top:10px;
+    border-radius: 15px;
+    font-size:30px;
+}
+.title,.date{
+    padding:10px;
+}
+@media screen and (max-width:768px) {
+    .containers{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input{
+        width:auto;
+    }
+}
